@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TourHub | Consultant Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="bi bi-airplane-fill"></i>
+            <h3>TourHub</h3>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="#">
+                    <i class="bi bi-grid-fill"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="destinations.html">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Top Destinations
+                </a>
+            </li>
+
+            <li>
+                <a href="bookings.html">
+                    <i class="bi bi-calendar-check-fill"></i>
+                    Booking Records
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    <i class="bi bi-credit-card-fill"></i>
+                    Payment Records
+                </a>
+            </li>
+
+            <li>
+                <a href="reviews.html">
+                    <i class="bi bi-star-fill"></i>
+                    Reviews
+                </a>
+            </li>
+
+            <li>
+                <a href="complaints.html">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    Complaints
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="bi bi-bell-fill"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="bi bi-person-circle"></i>
+                    My Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="bi bi-gear-fill"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="bi bi-box-arrow-right"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <div class="content">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container-fluid">
+
+                <button class="btn btn-primary"
+                        id="menuBtn">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+                <div class="search-box ms-4">
+
+                    <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Search Tour Packages">
+
+                </div>
+
+                <div class="ms-auto profile">
+
+                    <button class="btn position-relative">
+
+                        <i class="bi bi-bell-fill fs-4"></i>
+
+                        <span class="position-absolute
+                                     top-0
+                                     start-100
+                                     translate-middle
+                                     badge
+                                     rounded-pill
+                                     bg-danger">
+
+                            5
+
+                        </span>
+
+                    </button>
+
+                    <img src="https://i.pravatar.cc/150?img=13">
+
+                    <div>
+
+                        <strong>Rohit</strong>
+
+                        <br>
+
+                        <small>Travel Consultant</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Page Heading -->
+
+        <div class="mt-4 mb-4">
+
+            <h2 class="fw-bold">
+
+                Consultant Dashboard
+
+            </h2>
+
+            <p class="text-muted">
+
+                Welcome back! Here's today's overview.
+
+            </p>
+
+        </div>
+
+        <!-- Statistics Row -->
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="bi bi-calendar-check-fill"></i>
+
+                    </div>
+
+                    <div class="stats-title">
+
+                        Total Bookings
+
+                    </div>
+
+                    <div class="stats-value">
+
+                        356
+
+                    </div>
+
+                    <div class="stats-growth">
+
+                        ↑ 12% This Month
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="bi bi-currency-rupee"></i>
+
+                    </div>
+
+                    <div class="stats-title">
+
+                        Revenue
+
+                    </div>
+
+                    <div class="stats-value">
+
+                        ₹8.5L
+
+                    </div>
+
+                    <div class="stats-growth">
+
+                        ↑ 18% This Month
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="bi bi-airplane-fill"></i>
+
+                    </div>
+
+                    <div class="stats-title">
+
+                        Active Tours
+
+                    </div>
+
+                    <div class="stats-value">
+
+                        42
+
+                    </div>
+
+                    <div class="stats-growth">
+
+                        8 Starting Today
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="bi bi-star-fill"></i>
+
+                    </div>
+
+                    <div class="stats-title">
+
+                        Customer Rating
+
+                    </div>
+
+                    <div class="stats-value">
+
+                        4.9★
+
+                    </div>
+
+                    <div class="stats-growth">
+
+                        Based on 2,840 Reviews
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Continue with charts, tables and destination cards in the next section -->
+
+    </div>
+
+</div>
+
+<!-- Dashboard Chart + Profile -->
+
+<div class="row mt-4">
+
+    <!-- Revenue Chart -->
+
+    <div class="col-lg-8 mb-4">
+
+        <div class="chart-card">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                <h4>Monthly Revenue</h4>
+
+                <button class="btn btn-primary">
+
+                    View Report
+
+                </button>
+
+            </div>
+
+            <canvas id="revenueChart" height="120"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- Profile Card -->
+
+    <div class="col-lg-4 mb-4">
+
+        <div class="profile-card">
+
+            <img src="https://i.pravatar.cc/200?img=13">
+
+            <h4>Rohit</h4>
+
+            <p>Senior Travel Consultant</p>
+
+            <hr>
+
+            <div class="row text-center">
+
+                <div class="col">
+
+                    <h5>356</h5>
+
+                    <small>Bookings</small>
+
+                </div>
+
+                <div class="col">
+
+                    <h5>₹8.5L</h5>
+
+                    <small>Revenue</small>
+
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary w-100 mt-4">
+
+                View Profile
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="d-flex justify-content-between align-items-center mt-5 mb-4">
+
+    <h3>Popular Destinations</h3>
+
+    <a href="#" class="btn btn-outline-primary">
+
+        View All
+
+    </a>
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-4 mb-4">
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+            <div class="destination-card-body">
+
+                <h5>Maldives</h5>
+
+                <p>Luxury Beach Vacation</p>
+
+                <button class="btn btn-primary">
+
+                    View Package
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4 mb-4">
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+            <div class="destination-card-body">
+
+                <h5>Switzerland</h5>
+
+                <p>Mountain Adventure</p>
+
+                <button class="btn btn-success">
+
+                    View Package
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4 mb-4">
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963">
+
+            <div class="destination-card-body">
+
+                <h5>Dubai</h5>
+
+                <p>City Luxury Tour</p>
+
+                <button class="btn btn-warning">
+
+                    View Package
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="booking-table">
+
+    <div class="d-flex justify-content-between mb-4">
+
+        <h4>Recent Bookings</h4>
+
+        <button class="btn btn-primary">
+
+            Add Booking
+
+        </button>
+
+    </div>
+
+    <table class="table table-hover">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Amount</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>#1001</td>
+                <td>Rahul</td>
+                <td>Maldives</td>
+                <td>12 Aug</td>
+                <td>
+
+                    <span class="badge bg-success">
+
+                        Confirmed
+
+                    </span>
+
+                </td>
+
+                <td>₹85,000</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1002</td>
+                <td>Anjali</td>
+                <td>Dubai</td>
+                <td>16 Aug</td>
+                <td>
+
+                    <span class="badge bg-warning">
+
+                        Pending
+
+                    </span>
+
+                </td>
+
+                <td>₹62,000</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1003</td>
+                <td>Joseph</td>
+                <td>Switzerland</td>
+                <td>18 Aug</td>
+                <td>
+
+                    <span class="badge bg-danger">
+
+                       Cancelled
+
+                    </span>
+
+                </td>
+
+                <td>₹1,45,000</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="row mt-5">
+
+    <div class="col-lg-6">
+
+        <div class="notification-box">
+
+            <h4 class="mb-4">
+
+                Latest Notifications
+
+            </h4>
+
+            <div class="notification-item">
+
+                <i class="bi bi-bell-fill"></i>
+
+                <div>
+
+                    <strong>New Booking Received</strong>
+
+                    <br>
+
+                    <small>2 minutes ago</small>
+
+                </div>
+
+            </div>
+
+            <div class="notification-item">
+
+                <i class="bi bi-credit-card-fill"></i>
+
+                <div>
+
+                    <strong>Payment Successful</strong>
+
+                    <br>
+
+                    <small>15 minutes ago</small>
+
+                </div>
+
+            </div>
+
+            <div class="notification-item">
+
+                <i class="bi bi-star-fill"></i>
+
+                <div>
+
+                    <strong>New Review Added</strong>
+
+                    <br>
+
+                    <small>1 hour ago</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <div class="quick-action">
+
+            <i class="bi bi-plus-circle-fill"></i>
+
+            <h3>Create New Tour Package</h3>
+
+            <p>
+
+                Add new destinations and tour packages quickly.
+
+            </p>
+
+            <button class="btn btn-light">
+
+                Create Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

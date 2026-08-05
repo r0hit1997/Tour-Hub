@@ -1,0 +1,331 @@
+/* ===========================================
+            DASHBOARD CSS
+===========================================*/
+
+/* ---------- Statistic Cards ---------- */
+
+.stats-card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+    overflow:hidden;
+    height:100%;
+}
+
+.stats-card:hover{
+    transform:translateY(-8px);
+}
+
+.stats-card::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:5px;
+    top:0;
+    left:0;
+    background:#0d6efd;
+}
+
+.stats-icon{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eaf3ff;
+    margin-bottom:20px;
+}
+
+.stats-icon i{
+    font-size:28px;
+    color:#0d6efd;
+}
+
+.stats-title{
+    color:#6c757d;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.stats-value{
+    font-size:32px;
+    font-weight:700;
+    color:#1e293b;
+}
+
+.stats-growth{
+    margin-top:10px;
+    color:#198754;
+    font-size:14px;
+}
+
+/* ---------- Booking Table ---------- */
+
+.booking-table{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    margin-top:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.booking-table h4{
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.booking-table table{
+    width:100%;
+}
+
+.booking-table th{
+    background:#0d6efd;
+    color:white;
+    border:none;
+}
+
+.booking-table td{
+    vertical-align:middle;
+}
+
+/* ---------- Profile Card ---------- */
+
+.profile-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.profile-card img{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0d6efd;
+}
+
+.profile-card h4{
+
+    margin-top:20px;
+}
+
+.profile-card p{
+
+    color:#6c757d;
+}
+
+.profile-card button{
+
+    margin-top:15px;
+}
+
+/* ---------- Destination Cards ---------- */
+
+.destination-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.destination-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.destination-card img{
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+.destination-card-body{
+
+    padding:20px;
+}
+
+.destination-card-body h5{
+
+    font-weight:600;
+}
+
+.destination-card-body p{
+
+    color:#6c757d;
+}
+
+.destination-card-body button{
+
+    width:100%;
+}
+
+/* ---------- Progress ---------- */
+
+.progress{
+
+    height:10px;
+
+    border-radius:20px;
+
+    margin-top:10px;
+}
+
+.progress-bar{
+
+    border-radius:20px;
+}
+
+/* ---------- Chart ---------- */
+
+.chart-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* ---------- Notifications ---------- */
+
+.notification-box{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.notification-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #eee;
+}
+
+.notification-item:last-child{
+
+    border:none;
+}
+
+.notification-item i{
+
+    color:#0d6efd;
+
+    font-size:22px;
+}
+
+/* ---------- Quick Actions ---------- */
+
+.quick-action{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    padding:25px;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.quick-action:hover{
+
+    transform:translateY(-8px);
+}
+
+.quick-action i{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:992px){
+
+.content{
+
+margin-left:0;
+
+padding:20px;
+
+}
+
+.sidebar{
+
+left:-260px;
+
+transition:.4s;
+
+}
+
+.sidebar.active{
+
+left:0;
+
+z-index:999;
+}
+
+.search-box{
+
+width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.stats-value{
+
+font-size:26px;
+
+}
+
+.profile-card{
+
+margin-top:25px;
+}
+
+.booking-table{
+
+overflow-x:auto;
+}
+
+}
