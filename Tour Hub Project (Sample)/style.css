@@ -1,0 +1,344 @@
+/* ==========================================
+   TOUR HUB - GLOBAL STYLESHEET
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --primary:#0d6efd;
+    --secondary:#20c997;
+    --warning:#ffc107;
+    --danger:#dc3545;
+    --dark:#1e293b;
+    --light:#f5f7fb;
+    --white:#ffffff;
+    --gray:#6c757d;
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+    --radius:15px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--light);
+    color:#333;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--primary);
+    border-radius:20px;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width:100%;
+}
+
+/* ==============================
+        MAIN LAYOUT
+================================ */
+
+.wrapper{
+    display:flex;
+    min-height:100vh;
+}
+
+.content{
+    flex:1;
+    margin-left:260px;
+    padding:30px;
+    transition:.3s;
+}
+
+/* ==============================
+        SIDEBAR
+================================ */
+
+.sidebar{
+
+    width:260px;
+    background:var(--dark);
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    color:white;
+    padding:25px;
+    overflow-y:auto;
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.logo i{
+
+    font-size:35px;
+    color:#4dabff;
+}
+
+.logo h3{
+
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.sidebar ul li{
+
+    margin:10px 0;
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.sidebar ul li a:hover{
+
+    background:rgba(255,255,255,.12);
+    transform:translateX(5px);
+}
+
+.sidebar .active a{
+
+    background:var(--primary);
+}
+
+/* ============================
+        NAVBAR
+============================= */
+
+nav{
+
+    background:white;
+    border-radius:15px;
+    padding:15px 25px;
+    box-shadow:var(--shadow);
+}
+
+.search-box{
+
+    width:350px;
+}
+
+.search-box input{
+
+    border-radius:30px;
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile img{
+
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+/* ============================
+      DASHBOARD CARDS
+============================= */
+
+.dashboard-card{
+
+    background:white;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    padding:25px;
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-6px);
+}
+
+.dashboard-card h2{
+
+    font-size:35px;
+    color:var(--primary);
+}
+
+.dashboard-card p{
+
+    color:gray;
+    margin-top:8px;
+}
+
+/* ============================
+        ICON BOX
+============================= */
+
+.icon-box{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#eef5ff;
+}
+
+.icon-box i{
+
+    font-size:28px;
+    color:var(--primary);
+}
+
+/* ============================
+          BUTTONS
+============================= */
+
+.btn-primary{
+
+    border-radius:10px;
+}
+
+.btn-success{
+
+    border-radius:10px;
+}
+
+.btn-danger{
+
+    border-radius:10px;
+}
+
+/* ============================
+            TABLE
+============================= */
+
+.table{
+
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table th{
+
+    background:var(--primary);
+    color:white;
+}
+
+.table tbody tr:hover{
+
+    background:#f4f9ff;
+}
+
+/* ============================
+            CARDS
+============================= */
+
+.custom-card{
+
+    background:white;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    padding:20px;
+}
+
+/* ============================
+            BADGES
+============================= */
+
+.badge{
+
+    padding:8px 12px;
+    border-radius:30px;
+}
+
+/* ============================
+          FOOTER
+============================= */
+
+footer{
+
+    margin-top:40px;
+    text-align:center;
+    color:gray;
+}
+
+/* DARK MODE */
+
+body.dark{
+    background:#121212;
+    color:white;
+}
+
+body.dark nav,
+body.dark .stats-card,
+body.dark .chart-card,
+body.dark .booking-table,
+body.dark .destination-card,
+body.dark .profile-card,
+body.dark .notification-box{
+    background:#1f1f1f;
+    color:white;
+}
+
+body.dark table{
+    color:white;
+}
+
+body.dark .table th{
+    background:#0d6efd;
+}
+
+body.dark .sidebar{
+    background:#000;
+}
+
+body.dark input{
+    background:#2a2a2a;
+    color:white;
+    border:1px solid #555;
+}
